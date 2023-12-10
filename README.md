@@ -4,10 +4,6 @@ This repository provides complementary code for the paper [An Enhanced Approxima
 
 This study focuses on enhancing ride-pooling services through an advanced Approximate Dynamic Programming (ADP) model, comparing it with the Neural Approximate Dynamic Programming ([NeurADP](https://arxiv.org/pdf/1911.08842.pdf)) approach. Key extensions in the ADP model include handling pick-up/drop-off deadlines, vehicle rebalancing, and accommodating more than two passengers per vehicle. Using datasets from New York City and Chicago taxis, we perform a detailed analysis, examining factors like wait times, passenger group sizes, and vehicle capacity. Sensitivity to these factors and the impact of vehicle rebalancing are also explored. Our findings reveal that while NeurADP excels in larger, complex scenarios by better learning value function approximations, ADP is more effective in smaller settings. The study highlights the varying performances influenced by network density and road directionality.
 
-<p align="center">
-<img src="plots/AgentMovement.gif" alt="Simulation example with synthetic grid" width="600">
-</p>
-
 ## Repository Structure
 * `data` - Files related to datasets and generating instances of order arrivals. 
 	* `prepare_data.py` - Define parameters and execute data preparation. 
